@@ -5,7 +5,6 @@ import Font from "../constants/Font";
 import Spacing from "../constants/Spacing";
 import { LinearGradient } from "expo-linear-gradient";
 import { Link } from "expo-router";
-const image = 'https://img.freepik.com/fotos-gratis/mulher-treinando-com-barra-nos-ombros_651396-1619.jpg?t=st=1715905289~exp=1715908889~hmac=eecc8592a452f71e3db8cea05561d771fea08fd2c07121d61e28b1080e79f243&w=360'
 
 
 const OnBoardingScreen = () => {

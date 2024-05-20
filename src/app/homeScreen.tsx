@@ -1,15 +1,25 @@
 import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { Dimensions, ScrollView, StyleSheet, Text, View } from "react-native";
+import Spacing from "../constants/Spacing";
+import Screen from "../components/screen";
+import Search from "../components/search";
 
 const HomeScreen = () => {
-    return ( 
-        <View style={[{flex: 1, justifyContent: "center", alignItems: "center"}]}>
-            <Text>Home</Text>
-            <Link  href="/" style={{marginTop: 20}}>Go to Home</Link>
-        </View>
-     );
+    const { height } = Dimensions.get("window");
+
+    return (
+        <Screen style={{ backgroundColor: "black", height:"100%",  }}>
+            <ScrollView
+                style={{
+                    paddingHorizontal: Spacing.padding.base,
+                }}
+            >
+                <Search />
+            </ScrollView>
+        </Screen>
+    );
 }
- 
+
 export default HomeScreen;
 
 const styles = StyleSheet.create({});
