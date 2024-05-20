@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import OnBoardingScreen from './src/screens/onBoarding/onBoardingScreen';
+import OnBoardingScreen from './src/app/homeScreen';
 
 export default function App() {
   return (
