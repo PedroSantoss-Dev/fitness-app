@@ -5,6 +5,8 @@ import Screen from "../components/screen";
 import Search from "../components/search";
 import SectionHeader from "../components/sectionHeader";
 import Slider from "../components/slider";
+import Workout from "../components/workout";
+import { workout } from "../data";
 
 const HomeScreen = () => {
     const { height } = Dimensions.get("window");
@@ -19,6 +21,8 @@ const HomeScreen = () => {
                 <Search />
                 <SectionHeader>Recomendados</SectionHeader>
                 <Slider/>
+                <SectionHeader>Treinos</SectionHeader>
+                <Workout/>
             </ScrollView>
         </Screen>
     );
